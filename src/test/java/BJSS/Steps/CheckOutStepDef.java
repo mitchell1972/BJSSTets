@@ -2,8 +2,12 @@ package BJSS.Steps;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+
+import static BJSS.Utils.LauchBrowser.returnDriver;
 
 public class CheckOutStepDef {
+    WebDriver dr = returnDriver();
 
     @When("^I click on Proceed to checkout$")
     public void i_click_on_Proceed_to_checkout() throws Throwable {

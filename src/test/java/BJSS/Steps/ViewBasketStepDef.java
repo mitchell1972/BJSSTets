@@ -3,8 +3,12 @@ package BJSS.Steps;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+
+import static BJSS.Utils.LauchBrowser.returnDriver;
 
 public class ViewBasketStepDef {
+    WebDriver dr = returnDriver();
 
 
     @When("^I click on Add to cart$")
